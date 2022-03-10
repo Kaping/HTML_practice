@@ -1,0 +1,50 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1 id='grade'>
+        </h1>
+
+        <script>
+
+            const Myarray = [1, 2, 'apple', 'banana', 3.14, 'apple', true, false, 2, 'apple'];
+
+            // console.log('with apple position : ' + Myarray);
+            // while(true)
+            // {
+            //     let _idx = Myarray.indexOf('apple');
+
+            //     if(_idx < 0)
+            //     {
+            //         break;
+            //     }
+            //     Myarray.splice(_idx, 1);
+            // }
+            // console.log('without apple : ' + Myarray);
+            
+            let cnt = 0; //apple 개수
+
+            for(let i = 0; i < Myarray.length; i++)
+            {
+                if(Myarray[i] === 'apple')
+                    cnt++;
+            }
+
+            // let _idx = 0;
+            // while(true)
+            // {
+            //     _idx = Myarray.indexOf('apple', _idx);
+            //     if(_idx < 0)
+            //         break;
+
+            //     cnt += 1;
+            //     _idx += 1;
+            // }
+            console.log('사과 개수는 :' + cnt);
+
+        </script>
+
+    </body>
+</html>
