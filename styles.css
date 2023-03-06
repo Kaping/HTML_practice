@@ -5,6 +5,13 @@ body {
     justify-content:space-between;
     align-items:center;
 }
+
+div:only-child{
+    background-color: aquamarine;
+}
+/* div:nth-child(even) {
+ 
+} */
 div {
     /* position: fixed; */
     color: wheat;
@@ -13,10 +20,12 @@ div {
     background-color: wheat;  
     position: relative;
 }
+
+
 .green{
     background-color: teal;
     height: 100px;
     width: 100px;
     position: absolute;
-    bottom:0px;
+    top:30px;
 }
