@@ -1,13 +1,17 @@
-a {
+body{
     display: flex;
-    flex-direction: row ;
+    flex-direction: column ;
+}
+
+a {
+    
     color: wheat;
     background-color: tomato;
     text-decoration: none;
     padding:3px 5px;
     border-radius: 5px;
     font-size: 50px;
-    
+
     transition: all 0.5s ease-in-out;
 }
 
@@ -15,4 +19,16 @@ a:hover{
     font-size: 60px;
     color: tomato;
     background-color: wheat;
+}
+img {
+    border: 10px solid black;
+
+    border-radius: 50%;
+
+    transition: all 0.5s ease-in-out;
+    transform: rotateZ(0deg) scale(0.3);
+}
+img:hover{
+    transform: rotateZ(60deg) scale(0.6);
+    
 }
