@@ -1,73 +1,18 @@
-html {
-    background-color: #f5f5f5;
-}
-h1{
-    position: absolute;
-    top:0px;
-}
-body {
-    height: 100vh;
-    margin-top:100px;
+a {
     display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-}
- 
-div {
-    margin: 10px;
-    width : 170px;
-    height : 280px; 
-    position: relative;
-    border: 3px solid white;
-}
-div.colorbox > div:first-child{
+    flex-direction: row ;
+    color: wheat;
     background-color: tomato;
-}
-div.colorbox > div:nth-child(2){
-    background-color: teal;
-}
-div.colorbox > div:nth-child(3){
-    background-color: burlywood;
-}
-div.colorbox > div:nth-child(4){
-    background-color: thistle;
-}
-.colorbox {
-    height: 80vh;
-    width: 400px;
-    display: flex;
-    justify-content:space-evenly;
-    flex-wrap: wrap;
-    background: none;  
-    border: none;
-}
-.textbox{
-    margin:0px;
-    background-color: white;
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    top:30px;
-    border:none;
-    display: flex;
-    align-items: center;
+    text-decoration: none;
+    padding:3px 5px;
+    border-radius: 5px;
+    font-size: 50px;
+    
+    transition: all 0.5s ease-in-out;
 }
 
-span {
-    position: absolute;
-    top:15px;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    display: block;
+a:hover{
+    font-size: 60px;
+    color: tomato;
+    background-color: wheat;
 }
-span + span{
-    position: absolute;
-    top:60px;
-    font-size: 10px;
-    font-weight: bold;
-    color: black;
-    display: block;
-}
-
-
