@@ -1,34 +1,87 @@
+html{
+    background-color: #6BBCBE;
+}
+
 body{
     display: flex;
     flex-direction: column ;
-}
-
-a {
+    justify-content: center;
+    align-items: center;
+    height:100vh;
     
-    color: wheat;
-    background-color: tomato;
-    text-decoration: none;
-    padding:3px 5px;
-    border-radius: 5px;
-    font-size: 50px;
-
-    transition: all 0.5s ease-in-out;
 }
-
-a:hover{
-    font-size: 60px;
-    color: tomato;
-    background-color: wheat;
-}
-img {
-    border: 10px solid black;
-
+.circle {
+    background-color: white;
+    height: 5px;
+    width: 5px;
+    border: 1px solid white;
     border-radius: 50%;
-
-    transition: all 0.5s ease-in-out;
-    transform: rotateZ(0deg) scale(0.3);
 }
-img:hover{
-    transform: rotateZ(60deg) scale(0.6);
+.musicbar {
+    background-color: white;
+    height: 25px;
+    width: 6.5px;
+}
+div[id="one"]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     
+    height: 60px;
+    width: 60px;
+
+    animation: superHotImg 1s ease infinite;
+}
+
+div[id="two"]{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 70px;
+    width: 50px;
+}
+div.musicbar {
+    animation: musicOn 1s ease infinite;
+}
+
+div.musicbar:nth-child(2){
+    animation-delay: 0.1s;
+}
+div.musicbar:nth-child(3){
+    animation-delay: 0.2s;
+   }
+div.musicbar:nth-child(4){
+    animation-delay: 0.3s;
+}
+div.musicbar:nth-child(5){
+    animation-delay: 0.4s;
+}
+@keyframes superHotImg{
+    0% {
+        transform: rotateZ(-180deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes musicOn{
+    0% {
+        transform: scaleY(1);
+    }
+    25% {
+        transform: scaleY(2);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
